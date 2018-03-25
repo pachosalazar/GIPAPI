@@ -44,14 +44,14 @@ function myGifs(show){
     })
     // i have to set up a response 
     .then(function(response){
-      response.data.forEach(function(elemen) {
+      response.data.forEach(function(element) {
         newDiv=$("<div>");
         newDiv.addClass("individual-gif-container");
-        var newImg =$("<img src='"+elemnt.images.fixed_height-still.url+"'>");
+        var newImg =$("<img src='"+element.images.fixed_height-still.url+"'>");
         newImg.addClass("imaG")
         newImg.attr("state","still");
-        newImg.attr("still-data",elemnt.images.fixed_height_still.url);
-        newIMG.attr("animated-data",elemnt.images.fixed_height.url);
+        newImg.attr("still-data",element.images.fixed_height_still.url);
+        newImg.attr("animated-data",element.images.fixed_height.url);
         newDiv.append(newImg);
         $("#gifs").append(newDiv);    
       }); 
