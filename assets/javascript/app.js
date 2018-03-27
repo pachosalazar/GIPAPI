@@ -6,7 +6,7 @@ var gifsN = 10;
 // create a funtion to display the button
 
 function renderButtons (){
-  for (var i = 0; i < shows.lenght; i++){
+  for (var i = 0; i < shows.length; i++){
    // jquery button  var and code  
     var newButton = $("<button>");
     newButton.addClass ("btn")
@@ -73,7 +73,7 @@ function myGifs(show){
 
 $(document).ready(function(){
 	renderButtons();
-	$("#submit").on("click", function(){
+	$("#submit").on("click", function(event){
 		event.preventDefault();
 		add($("#AMCshow").val().trim());
 		$("#AMCshow").val("");
