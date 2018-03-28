@@ -4,4 +4,26 @@ background-image: url("../image/Anime Vs Cartoon.jpg") ;
 }
 .jumbotron{
   opacity: 50%;
+  background: linear-gradient(goldenrod, black); 
+  text-align: center;
+
+}
+.individual-gif-container{
+  float: left;
+  /* width: 200px;
+  height: 200px; */
+  margin: 2px 2px 2px 2px;
+  
+}
+.show{
+  margin: 2px 2px 2px 2px;
+  color: rgb(251, 251, 251);
+  background-color: rgba(14, 92, 0, 0.329);
+  
+}
+.conteiner {
+  background-color: rgba(0, 255, 255, 0.342);
+}
+h1,h5 {
+  color: white;
 }

@@ -47,16 +47,17 @@ function myGifs(show){
       response.data.forEach(function(element) {
         newDiv=$("<div>");
         newDiv.addClass("individual-gif-container");
-        var newImg =$("<img src='"+element.images.fixed_height-still.url+"'>");
+        var newImg =$("<img src='"+element.images.fixed_height_still.url+"'>");
         newImg.addClass("imaG")
         newImg.attr("state","still");
         newImg.attr("still-data",element.images.fixed_height_still.url);
         newImg.attr("animated-data",element.images.fixed_height.url);
         newDiv.append(newImg);
-        $("#gifs").append(newDiv);    
+        $("#gifs").append(newDiv);
+
       }); 
       //(unbind) removes previous attacheds
-      $("#gifs").addClass("border border-success");
+      // 
       $(".imaG").unbind("click");
       $(".imaG").on("click",function(){
           if($(this).attr("state")==="still"){
